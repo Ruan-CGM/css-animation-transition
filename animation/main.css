@@ -5,7 +5,8 @@
   background-color: tomato;
   position: relative;
 
-  animation: example-ball 4s;
+  /* animation: example-ball 4s; */
+  animation: example2-ball 10s;
 }
 
 @keyframes example-ball {
@@ -14,5 +15,33 @@
   }
   to {
     background-color: rosybrown;
+  }
+}
+
+@keyframes example2-ball {
+  0% {
+    background-color: burlywood;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: aqua;
+    left: 400px;
+    top: 0;
+  }
+  50% {
+    background-color: coral;
+    left: 400px;
+    top: 400px;
+  }
+  75% {
+    background-color: steelblue;
+    left: 0;
+    top: 400px;
+  }
+  100% {
+    background-color: tomato;
+    left: 0;
+    top: 0;
   }
 }
