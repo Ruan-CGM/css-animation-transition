@@ -1,0 +1,18 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: tomato;
+  position: relative;
+
+  animation: example-ball 4s;
+}
+
+@keyframes example-ball {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: rosybrown;
+  }
+}
