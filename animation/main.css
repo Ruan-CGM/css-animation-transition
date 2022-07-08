@@ -6,7 +6,12 @@
   position: relative;
 
   /* animation: example-ball 4s; */
-  animation: example2-ball 10s;
+  /* 
+    Propriedades do animation
+    animation-name, animation-duration, 
+    animation-delay, animation-iteration-count
+  */
+  animation: example2-ball 10s 2s 2;
 }
 
 @keyframes example-ball {
