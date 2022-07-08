@@ -9,9 +9,10 @@
   /* 
     Propriedades do animation
     animation-name, animation-duration, 
-    animation-delay, animation-iteration-count
+    animation-delay, animation-iteration-count (infinite)
+    animation-direction (reverse, alternate, alternate-reverse)
   */
-  animation: example2-ball 10s 2s 2;
+  animation: example2-ball 10s 2s 2 alternate;
 }
 
 @keyframes example-ball {
