@@ -1,0 +1,20 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: relative; /* Necessário para conseguir alterar a posição do elemento */
+  border-radius: 100%;
+
+  /* Animation-fill-mode (forwards, backwards, both) */
+  animation: example 2s 5s both;
+}
+
+@keyframes example {
+  from {
+    left: 0;
+    background-color: blueviolet;
+  }
+  to {
+    left: calc(100% - 100px);
+  }
+}
