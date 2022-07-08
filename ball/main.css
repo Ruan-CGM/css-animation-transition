@@ -4,9 +4,12 @@ div {
   background-color: tomato;
   position: relative; /* Necessário para conseguir alterar a posição do elemento */
   border-radius: 100%;
+  margin-top: 50px;
 
   /* Animation-fill-mode (forwards, backwards, both) */
-  animation: example 2s 5s both;
+  /* animation: example 2s 5s both; */
+  /* animation: bounce 1s infinite alternate; */
+  animation: fade-in 5s ease-in-out;
 }
 
 @keyframes example {
@@ -16,5 +19,31 @@ div {
   }
   to {
     left: calc(100% - 100px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
